@@ -442,6 +442,45 @@ a {
     grid-template-columns: 1fr;
     gap: 1.75rem;
   }
+
+  /* Push the text block off the face (which sits in the upper half of the
+     static portrait) and down onto the jacket/shoulder area, with the
+     "Built with" row anchored to the very bottom of the hero. Sizes are
+     tightened so the whole block actually clears the chin line. */
+  .hero-content {
+    justify-content: flex-end;
+    gap: clamp(0.5rem, 1.5vh, 0.9rem);
+    padding-bottom: clamp(1rem, 3vh, 1.75rem);
+  }
+
+  .hero-eyebrow {
+    font-size: clamp(0.7rem, 1.8vh, 0.85rem);
+  }
+
+  .hero-headline {
+    font-size: clamp(1.4rem, 4.2vh, 2rem);
+    line-height: 1.15;
+  }
+
+  .hero-headline-wrap {
+    min-height: 2.3em;
+  }
+
+  .hero-subhead {
+    font-size: clamp(0.78rem, 2vh, 0.92rem);
+    line-height: 1.5;
+    max-width: 30ch;
+  }
+
+  .hero-ctas {
+    gap: 0.6rem;
+    padding-top: 0.2rem;
+  }
+
+  .hero-tools {
+    margin-top: clamp(0.5rem, 1.5vh, 0.8rem);
+    padding-top: clamp(0.6rem, 1.8vh, 1rem);
+  }
 }
 
 /* scroll-reveal targets, animated in via GSAP; visible by default so content
