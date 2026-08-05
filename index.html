@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shafay — Web Developer &amp; AI Strategist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__track">
+      <div class="loader__bar" id="loaderBar"></div>
+    </div>
+  </div>
+
+  <section class="hero-pin-wrap">
+    <div class="hero-pin">
+      <canvas id="scrollCanvas"></canvas>
+      <img
+        src="assets/hero-mobile.jpg"
+        alt="Shafay — Web developer &amp; AI strategist"
+        class="hero-mobile-img"
+        decoding="async"
+      />
+      <div class="hero-scrim" aria-hidden="true"></div>
+
+      <div class="hero-overlay">
+        <header class="hero-nav">
+          <a class="hero-nav__logo" href="#">Shafay</a>
+
+          <nav class="hero-nav__links">
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <a class="btn btn--nav" href="#contact">
+            <span>Get in touch</span>
+            <span class="btn__badge" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
+                <path d="M3 11L11 3M11 3H4.5M11 3V9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </a>
+        </header>
+
+        <div class="hero-content">
+          <p class="hero-eyebrow">Web developer &amp; AI strategist</p>
+
+          <div class="hero-headline-wrap">
+            <h1 class="hero-headline" id="heroHeadline">We build AI-powered websites</h1>
+          </div>
+
+          <p class="hero-subhead">
+            Websites, booking systems, and AI tools for plumbers, salons, and auto
+            shops — built fast, built to convert.
+          </p>
+
+          <div class="hero-ctas">
+            <a class="btn btn--primary" href="#contact">
+              <span>Start a Project</span>
+              <span class="btn__badge" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
+                  <path d="M3 11L11 3M11 3H4.5M11 3V9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </a>
+            <a class="btn btn--secondary" href="#work">View Work</a>
+          </div>
+
+          <div class="hero-tools">
+            <span class="hero-tools__label">Built with</span>
+            <span class="hero-tools__item">GitHub</span>
+            <span class="hero-tools__dot">&middot;</span>
+            <span class="hero-tools__item">Netlify</span>
+            <span class="hero-tools__dot">&middot;</span>
+            <span class="hero-tools__item">Vercel</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about__container">
+      <p class="section-eyebrow reveal-up">About</p>
+
+      <div class="about__grid">
+        <h2 class="about__heading reveal-up">
+          AI-assisted builds, made for local service businesses.
+        </h2>
+        <p class="about__copy reveal-up">
+          I design and ship production-ready websites and booking systems for
+          plumbers, auto repair shops, beauty salons, and other local service
+          businesses — built fast with an AI-assisted workflow, with ongoing
+          maintenance and support after launch.
+        </p>
+      </div>
+
+      <div class="about__stats">
+        <div class="stat-card reveal-up">
+          <div class="stat-card__glow"></div>
+          <p class="stat__value">3</p>
+          <p class="stat__label">Production demo sites, live and booking-ready</p>
+        </div>
+        <div class="stat-card reveal-up">
+          <div class="stat-card__glow"></div>
+          <p class="stat__value">US &middot; CA &middot; AU</p>
+          <p class="stat__label">Markets currently served</p>
+        </div>
+        <div class="stat-card reveal-up">
+          <div class="stat-card__glow"></div>
+          <p class="stat__value">4</p>
+          <p class="stat__label">Tools in the stack — Claude Code, GitHub, Netlify, Vercel</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <div class="work__container">
+      <p class="section-eyebrow reveal-up">Selected Work</p>
+      <h2 class="section-heading reveal-up">High-performance systems built for real businesses.</h2>
+      
+      <div class="work__grid">
+        <!-- Card 1: Aqua Engineering -->
+        <div class="work-card reveal-up">
+          <div class="work-card__image-wrap">
+            <img src="assets/work-aqua.png" alt="Aqua Engineering Website Demo" class="work-card__image" loading="lazy">
+          </div>
+          <div class="work-card__content">
+            <div class="work-card__meta">
+              <span class="work-card__niche">Plumbing & Architectural Engineering</span>
+              <span class="work-card__badge">AI Studio App</span>
+            </div>
+            <h3 class="work-card__title">Aqua Engineering</h3>
+            <p class="work-card__problem-solution">
+              <strong>Problem:</strong> A high-end plumbing service losing premium leads due to lack of visual authority.<br>
+              <strong>Solution:</strong> An interactive, clean residential water systems booking wizard powered by a dynamic AI strategist.
+            </p>
+            <div class="work-card__tags">
+              <span>React 19</span>
+              <span>TypeScript</span>
+              <span>Gemini API</span>
+              <span>Vite</span>
+            </div>
+            <div class="work-card__actions">
+              <a href="https://aquaengineering.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn--work-live">
+                <span>View Live Site</span>
+                <span class="btn__badge">
+                  <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
+                    <path d="M3 11L11 3M11 3H4.5M11 3V9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </a>
+              <a href="https://github.com/shafay969/aqua-engineering" target="_blank" rel="noopener noreferrer" class="btn btn--work-primary">
+                <span>View Source</span>
+                <span class="btn__badge">
+                  <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
+                    <path d="M3 11L11 3M11 3H4.5M11 3V9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: HiTech Automobiles -->
+        <div class="work-card reveal-up">
+          <div class="work-card__image-wrap">
+            <img src="assets/work-hitech.jpg" alt="HiTech Automobiles Website Demo" class="work-card__image" loading="lazy">
+          </div>
+          <div class="work-card__content">
+            <div class="work-card__meta">
+              <span class="work-card__niche">Car Repair & Auto Detailing</span>
+              <span class="work-card__badge">Live Booking</span>
+            </div>
+            <h3 class="work-card__title">HiTech Automobiles</h3>
+            <p class="work-card__problem-solution">
+              <strong>Problem:</strong> Friction in appointment scheduling creating operational bottlenecks.<br>
+              <strong>Solution:</strong> A cinematic single-page showcase integrated with direct WhatsApp scheduling and smooth tyre scroll animations.
+            </p>
+            <div class="work-card__tags">
+              <span>GSAP</span>
+              <span>ScrollTrigger</span>
+              <span>HTML5/CSS3</span>
+              <span>Netlify</span>
+            </div>
+            <div class="work-card__actions">
+              <a href="https://hitechautomobiles.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn--work-live">
+                <span>View Live Site</span>
+                <span class="btn__badge">
+                  <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
+                    <path d="M3 11L11 3M11 3H4.5M11 3V9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </a>
+              <a href="https://github.com/shafay969/HI-TECH-AUTOMOBILES-Website" target="_blank" rel="noopener noreferrer" class="btn btn--work-primary">
+                <span>View Source</span>
+                <span class="btn__badge">
+                  <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
+                    <path d="M3 11L11 3M11 3H4.5M11 3V9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Blush & Co -->
+        <div class="work-card reveal-up">
+          <div class="work-card__image-wrap">
+            <img src="assets/work-salon.png" alt="Blush & Co Website Demo" class="work-card__image" loading="lazy">
+          </div>
+          <div class="work-card__content">
+            <div class="work-card__meta">
+              <span class="work-card__niche">Luxury Hair & Beauty Studio</span>
+              <span class="work-card__badge">Client Portal</span>
+            </div>
+            <h3 class="work-card__title">Blush & Co.</h3>
+            <p class="work-card__problem-solution">
+              <strong>Problem:</strong> Salons losing clients to complex, third-party booking systems.<br>
+              <strong>Solution:</strong> A gorgeous, mobile-responsive studio site with a built-in booking page and dynamic pricing catalogs.
+            </p>
+            <div class="work-card__tags">
+              <span>HTML5</span>
+              <span>Tailwind CSS</span>
+              <span>JavaScript</span>
+              <span>Vercel</span>
+            </div>
+            <div class="work-card__actions">
+              <a href="https://blush-n-co.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn--work-live">
+                <span>View Live Site</span>
+                <span class="btn__badge">
+                  <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
+                    <path d="M3 11L11 3M11 3H4.5M11 3V9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </a>
+              <a href="https://github.com/shafay969/beauty-saloon-website" target="_blank" rel="noopener noreferrer" class="btn btn--work-primary">
+                <span>View Source</span>
+                <span class="btn__badge">
+                  <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
+                    <path d="M3 11L11 3M11 3H4.5M11 3V9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="services__container">
+      <p class="section-eyebrow reveal-up">Services</p>
+      <h2 class="section-heading reveal-up">Tailored systems that drive revenue.</h2>
+      
+      <div class="services__grid">
+        <!-- Service 1: Website Development -->
+        <div class="service-card reveal-up">
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Website Development</h3>
+          <p class="service-card__description">High-end, AI-assisted development yielding ultra-fast load times, bespoke layouts, and frictionless user flows. Built to convert traffic into calls and bookings.</p>
+        </div>
+
+        <!-- Service 2: AI Chatbots -->
+        <div class="service-card reveal-up">
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              <path d="M8 10h.01M12 10h.01M16 10h.01"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">AI Chatbots</h3>
+          <p class="service-card__description">Custom-trained conversational bots embedded directly into your website. Automatically capture leads, answer client FAQs, and book service calls 24/7.</p>
+        </div>
+
+        <!-- Service 3: Booking & Appointment Systems -->
+        <div class="service-card reveal-up">
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Booking Systems</h3>
+          <p class="service-card__description">Frictionless, multi-step calendars and booking workflows integrated directly with your calendar (or WhatsApp) so customers schedule jobs in seconds.</p>
+        </div>
+
+        <!-- Service 4: Maintenance & Ongoing Support -->
+        <div class="service-card reveal-up">
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Maintenance &amp; Support</h3>
+          <p class="service-card__description">Worry-free ongoing maintenance. We handle security updates, content revisions, hosting architecture, and speed optimization for a flat monthly retainer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process" id="process">
+    <div class="process__container">
+      <p class="section-eyebrow reveal-up">The Process</p>
+      <h2 class="section-heading reveal-up">How we build the systems your business runs on.</h2>
+      
+      <div class="process__steps">
+        <!-- Step 1 -->
+        <div class="process-step reveal-up">
+          <div class="process-step__number">01</div>
+          <h3 class="process-step__title">Discovery &amp; Strategy</h3>
+          <p class="process-step__description">We study your business goals, target audience, and local competitors to map out key conversion paths (calls, WhatsApp bookings, or dynamic forms).</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="process-step reveal-up">
+          <div class="process-step__number">02</div>
+          <h3 class="process-step__title">Bespoke Design</h3>
+          <p class="process-step__description">We create high-fidelity design prototypes that reflect your brand identity, focusing heavily on premium layouts, contrast, typography, and visual appeal.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="process-step reveal-up">
+          <div class="process-step__number">03</div>
+          <h3 class="process-step__title">AI-Assisted Build</h3>
+          <p class="process-step__description">Leveraging modern AI-assisted engineering workflows, we assemble clean, responsive, and blazing-fast code, shipping in weeks instead of months.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="process-step reveal-up">
+          <div class="process-step__number">04</div>
+          <h3 class="process-step__title">Launch &amp; Scale</h3>
+          <p class="process-step__description">We configure deployment, map custom domains, and configure analytics. Then, we provide ongoing monthly maintenance and support so you can run your business.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact__container">
+      <div class="contact__grid">
+        <div class="contact__info reveal-up">
+          <p class="section-eyebrow">Start a Project</p>
+          <h2 class="contact__heading">Let's build something beautiful.</h2>
+          <p class="contact__copy">
+            Have a project in mind or need assistance scaling your local service business online? Reach out and get a fully custom quote within 24 hours.
+          </p>
+          
+          <div class="contact__channels">
+            <a href="mailto:shafaybilal123@gmail.com" class="contact-channel">
+              <span class="contact-channel__icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </span>
+              <span>shafaybilal123@gmail.com</span>
+            </a>
+            
+            <a href="https://wa.me/8615677662850" target="_blank" rel="noopener noreferrer" class="contact-channel">
+              <span class="contact-channel__icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                </svg>
+              </span>
+              <span>Chat on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__form-wrap reveal-up">
+          <form class="contact-form" id="contactForm" onsubmit="event.preventDefault(); alert('Message sent! I will get in touch with you shortly.'); this.reset();">
+            <div class="form-group">
+              <input type="text" id="form-name" required placeholder=" " class="form-input">
+              <label for="form-name" class="form-label">Full Name</label>
+            </div>
+            
+            <div class="form-group">
+              <input type="email" id="form-email" required placeholder=" " class="form-input">
+              <label for="form-email" class="form-label">Email Address</label>
+            </div>
+            
+            <div class="form-group">
+              <input type="text" id="form-business" required placeholder=" " class="form-input">
+              <label for="form-business" class="form-label">Business Type (e.g. Plumber, Salon)</label>
+            </div>
+
+            <div class="form-group">
+              <textarea id="form-message" required placeholder=" " rows="4" class="form-input form-textarea"></textarea>
+              <label for="form-message" class="form-label">Project Details</label>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--submit">
+              <span>Send Message</span>
+              <span class="btn__badge">
+                <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
+                  <path d="M3 11L11 3M11 3H4.5M11 3V9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__top">
+        <a class="footer__logo" href="#">Shafay</a>
+        <div class="footer__links">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 Shafay. All rights reserved. Built with AI-assisted workflows.</p>
+        <div class="footer__socials">
+          <span class="footer__socials-label">Powered by</span>
+          <span class="footer__socials-item">Claude</span>
+          <span class="footer__socials-dot">&middot;</span>
+          <span class="footer__socials-item">GitHub</span>
+          <span class="footer__socials-dot">&middot;</span>
+          <span class="footer__socials-item">Netlify</span>
+          <span class="footer__socials-dot">&middot;</span>
+          <span class="footer__socials-item">Vercel</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
