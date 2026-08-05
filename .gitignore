@@ -1,2 +1,5 @@
 .DS_Store
 mobile version/
+
+# Local Netlify folder
+.netlify
